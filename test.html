@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--Adds the name Cyber Protect in tab heading-->
+    <title>CyberProtect</title>
+    <!-- Create a button on the logo in the top left to take user to home page-->
+    <a href="./mainpage.html"><img src = "./images/toplogo.png"> </a>
+    <!--Links to stylesheet document to showcase all design features-->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div id="header">
+        <!--Creates search bar and button in top right of interface-->
+        <form id="search-form">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="nav">
+        <ul>
+            <!--Creates button for home page -->
+            <li><a href="./mainpage.html">HOME</a></li>
+            <li>
+            <!--Creates dropdown menu with buttons for threats-->
+                <a href="#">THREATS</a>
+                <ul>
+                    <li><a href="./sofsec.html">Software Security</a></li>
+                    <li><a href="./netsec.html">Network Security</a></li>
+                    <li><a href="./websec.html">Web Security</a></li>
+                    <li><a href="./syssec.html">System Security</a></li>
+                    <li><a href="./mobsec.html">Mobile Security</a></li>
+
+                </ul>
+            </li>
+            <li>
+            <!--Creates dropdown menu with buttons for defence-->
+                <a href="#">DEFENCE</a>
+                <ul>
+                    <li><a href="./passwords.html">Passwords</a></li>
+                    <li><a href="./mfa.html">MFA</a></li> 
+                    <li><a href="./sofupd.html">Software Update</a></li>
+                    <li><a href="./antivirus.html">Antivirus/Malware</a></li>
+                </ul>
+            </li>
+            <li>
+            <!--Creates dropdown menu with buttons for training-->
+                <a href="#">TRAINING</a>
+                <ul>
+                    <li><a href="./test.html">Knowledge Test</a></li>
+                    <li><a href="#">Courses</a></li> 
+                </ul>
+            </li>
+            <li>
+            <!--Creates dropdown menu with buttons for news-->
+                <a href="#">NEWS</a>
+                <ul>
+                    <li><a href="./articles.html">Articles</a></li>
+                    <li><a href="./blogs.html">Blogs</a></li> 
+                </ul>
+            </li>
+            <!--Creates button for about us-->
+            <li><a href="./aboutus.html">ABOUT US</a></li>
+        </ul>
+    </div>
+<body>
+    <div class="start_btn">
+        <button>Start Quiz</button>
+    </div>
+
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">   
+                <!-- questions would be appearing using this div -->
+            </div>
+            <div class="option_list">
+                <!-- options would be appearing using this div -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <!-- Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+
+    <script src="js/questions.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <!-- to go back to mainpage -->
+    <script>
+        const backToWebsiteButton = document.getElementById("backToWebsiteBtn");
+        backToWebsiteButton.addEventListener("click", function() {
+            window.location.href = "mainpage.html";
+        });
+    </script>
+
+<div class = "bottom_footer">
+    <div class = "col_1st">
+        <h3><b>USEFUL LINKS</b></h3>
+        <a href = "./aboutus.html"><u>About Us</u></a>
+        <a href = "./faq.html"><u>FAQ's</u></a>
+        <a href = "./privpol.html"><u>Privacy Policy</u></a>
+        <a href = "./aboutus.html"><u>Contact Us</u></a>
+        <a href = "./mainpage.html"><u>Back to Home</u></a>
+
+        </div>
+    <div class = "col_2nd">
+        <div style = "position:bottom; bottom: 30px; left:450px; ">
+        <a href="./mainpage.html"><img src = "./images/Footer logo.png" width=40% height=auto> </a>
+        </div>
+
+    </div>
+    <div class = "col_3rd">
+        <h3><b>LOCATION</b></h3> <br>
+        <p>123 Northfields Ave<br>Wollongong, 2522<br> NSW, Australia</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CyberProtect</title>
+    <a href="./mainpage.html"><img src = "./images/toplogo.png"> </a>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        /* Additional CSS for white fonts in the form */
+        .right-content {
+            color: white;
+        }
+        .right-content label,
+        .right-content input,
+        .right-content textarea,
+        .right-content button {
+            color: white;
+        }
+
+        /* Styling for the submit button */
+        .right-content button[type="submit"] {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <form id="search-form">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a href="./mainpage.html">HOME</a></li>
+            <li>
+                <a href="#">THREATS</a>
+                <ul>
+                    <li><a href="./sofsec.html">Software Security</a></li>
+                    <li><a href="./netsec.html">Network Security</a></li>
+                    <li><a href="./websec.html">Web Security</a></li>
+                    <li><a href="./syssec.html">System Security</a></li>
+                    <li><a href="./mobsec.html">Mobile Security</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">DEFENCE</a>
+                <ul>
+                    <li><a href="./passwords.html">Passwords</a></li>
+                    <li><a href="./mfa.html">MFA</a></li> 
+                    <li><a href="./sofupd.html">Software Update</a></li>
+                    <li><a href="./antivirus.html">Antivirus/Malware</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">TRAINING</a>
+                <ul>
+                    <li><a href="./test.html">Knowledge Test</a></li>
+                    <li><a href="#">Courses</a></li> 
+                </ul>
+            </li>
+            <li>
+                <a href="#">NEWS</a>
+                <ul>
+                    <li><a href="./articles.html">Articles</a></li>
+                    <li><a href="./blogs.html">Blogs</a></li> 
+                </ul>
+            </li>
+            <li><a href="./aboutus.html">ABOUT US</a></li>
+        </ul>
+    </div>
+<div class="content-container">
+        <div class="left-content">
+            <h1>Blogs</h1>
+            <!-- Place your blog content here -->
+        </div><br></br>
+        <div class="right-content">
+            <form action="process_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class = "bottom_footer">
+            <div class = "col_1st">
+                <h3><b>USEFUL LINKS</b></h3>
+                <a href = "./aboutus.html"><u>About Us</u></a>
+                <a href = "./faq.html"><u>FAQ's</u></a>
+                <a href = "./privpol.html"><u>Privacy Policy</u></a>
+                <a href = "./aboutus.html"><u>Contact Us</u></a>
+                <a href = "./mainpage.html"><u>Back to Home</u></a>
+    
+                </div>
+            <div class = "col_2nd">
+                <div style = "position:bottom; bottom: 30px; left:450px; ">
+                <a href="./mainpage.html"><img src = "./images/Footer logo.png" width=40% height=auto> </a>
+                </div>
+    
+            </div>
+            <div class = "col_3rd">
+                <h3><b>LOCATION</b></h3> <br>
+                <p>123 Northfields Ave<br>Wollongong, 2522<br> NSW, Australia</p>
+            </div>
+        </div>
+
+</body>
+</HTML>
